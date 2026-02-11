@@ -1,4 +1,19 @@
-/* Reset & font */
+/* === Font Face === */
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/roboto-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/roboto-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* === Reset & Base === */
 body {
   font-family: 'Roboto', Arial, sans-serif;
   line-height: 1.6;
@@ -33,7 +48,7 @@ p {
   margin-bottom: 20px;
 }
 
-/* Social links */
+/* === Social Links === */
 .social-links {
   display: flex;
   flex-wrap: wrap;
@@ -53,23 +68,23 @@ p {
 
 .social-links a:hover {
   transform: scale(1.1);
-  background: #0073e6; /* highlight color on hover */
+  background: #0073e6;
 }
 
-/* Section headings */
+/* === Section Headings === */
 section h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
 
-/* Footer */
+/* === Footer === */
 footer {
   margin-top: 40px;
   font-size: 0.9rem;
   color: #555;
 }
 
-/* Responsive */
+/* === Responsive === */
 @media (max-width: 600px) {
   .social-links {
     flex-direction: column;
