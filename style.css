@@ -1,0 +1,82 @@
+/* Reset & font */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background: #f5f5f5;
+  color: #333;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #333;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white;
+  background: #333;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: transform 0.2s, background 0.2s;
+  font-weight: 500;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  background: #0073e6; /* highlight color on hover */
+}
+
+/* Section headings */
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .social-links {
+    flex-direction: column;
+  }
+
+  .social-links a {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
