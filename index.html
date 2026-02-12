@@ -10,106 +10,76 @@
 
   <title>Valentin Bold</title>
 
-  <!-- Fonts Local -->
-  <style>
-    @font-face {
-      font-family: 'Roboto';
-      src: url('fonts/roboto-regular.woff2') format('woff2');
-      font-weight: 400;
-      font-style: normal;
-    }
-    @font-face {
-      font-family: 'Roboto';
-      src: url('fonts/roboto-bold.woff2') format('woff2');
-      font-weight: 700;
-      font-style: normal;
-    }
-
-    /* Critical CSS inline */
-    body {
-      font-family: 'Roboto', Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-      background: #f5f5f5;
-      color: #333;
-    }
-
-    header {
-      margin-bottom: 40px;
-    }
-
-    .profile-img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border: 3px solid #333;
-      margin-bottom: 20px;
-    }
-
-    h1 { font-size: 2.2rem; margin-bottom: 10px; }
-    p { font-size: 1.1rem; margin-bottom: 20px; }
-
-    .social-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .social-links a {
-      text-decoration: none;
-      color: white;
-      background: #333;
-      padding: 10px 15px;
-      border-radius: 8px;
-      transition: transform 0.2s, background 0.2s;
-      font-weight: 500;
-    }
-
-    .social-links a:hover {
-      transform: scale(1.1);
-      background: #0073e6;
-    }
-
-    section h2 { font-size: 1.8rem; margin-bottom: 20px; }
-    footer { margin-top: 40px; font-size: 0.9rem; color: #555; }
-
-    @media (max-width: 600px) {
-      .social-links { flex-direction: column; }
-      .social-links a { width: 70%; margin: 0 auto; }
-    }
-  </style>
-
-  <!-- Rest CSS -->
+  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- ===== Open Graph (Facebook, LinkedIn) ===== -->
+  <meta property="og:title" content="Valentin Bold - Developer & Filmmaker">
+  <meta property="og:description" content="Valentin Bold self-taught developer, editor & filmmaker, creating AI scripts, automation tools, and creative projects.">
+  <meta property="og:image" content="https://valentinbold.github.io/images/Valentin-Bold.webp">
+  <meta property="og:url" content="https://valentinbold.github.io/">
+  <meta property="og:type" content="website">
+
+  <!-- ===== Twitter Cards ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Valentin Bold - Developer & Filmmaker">
+  <meta name="twitter:description" content="Valentin Bold self-taught developer, editor & filmmaker, creating AI scripts, automation tools, and creative projects.">
+  <meta name="twitter:image" content="https://valentinbold.github.io/images/Valentin-Bold.webp">
+  <meta name="twitter:site" content="@BoldValent63072">
+
+  <!-- ===== Schema.org JSON-LD ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Valentin Bold",
+    "url": "https://valentinbold.github.io/",
+    "sameAs": [
+      "https://github.com/ValentinBold",
+      "https://www.linkedin.com/in/valentin-bold-b8167a2a8/",
+      "https://www.instagram.com/boldvalentin_/"
+    ],
+    "jobTitle": "Self-taught Developer, Editor & Filmmaker",
+    "image": "https://valentinbold.github.io/images/Valentin-Bold.webp",
+    "description": "Experimenting with AI scripts, automation tools, social media, and creative projects."
+  }
+  </script>
 </head>
+
 <body>
   <header>
-    <img src="images/Valentin Bold.webp" alt="Valentin Bold" class="profile-img" width="150" height="150">
+    <img
+      src="images/Valentin-Bold.webp"
+      alt="Valentin Bold"
+      class="profile-img"
+      width="150"
+      height="150"
+    >
     <h1>Valentin Bold</h1>
-    <p>Self-taught developer, editor & filmmaker. Experimenting with AI scripts, web scraping, social media automation, and more.</p>
+    <p>
+      Self-taught developer, editor & filmmaker.
+      Experimenting with AI scripts, web scraping, social media automation, and more.
+    </p>
   </header>
 
-  <section>
-    <h2>Connect with me</h2>
-    <div class="social-links">
-      <a href="https://github.com/ValentinBold" target="_blank">GitHub</a>
-      <a href="https://www.tiktok.com/@valentinbold_" target="_blank">TikTok</a>
-      <a href="https://www.youtube.com/@ValentinBold" target="_blank">YouTube</a>
-      <a href="https://in.pinterest.com/boldvalentin_/" target="_blank">Pinterest</a>
-      <a href="https://www.behance.net/valentinovidiu" target="_blank">Behance</a>
-      <a href="https://www.imdb.com/name/nm17674980/?ref_=ext_shr_lnk" target="_blank">IMDb</a>
-      <a href="https://www.linkedin.com/in/valentin-bold-b8167a2a8/?originalSubdomain=ro" target="_blank">LinkedIn</a>
-      <a href="https://www.facebook.com/profile.php?id=61582197007578" target="_blank">Facebook</a>
-      <a href="https://bento.me/valentinbold" target="_blank">Bento</a>
-      <a href="https://x.com/BoldValent63072" target="_blank">X / Twitter</a>
-      <a href="https://www.instagram.com/boldvalentin_/" target="_blank">Instagram</a>
-    </div>
-  </section>
+  <main>
+    <section>
+      <h2>Connect with me</h2>
+      <div class="social-links">
+        <a href="https://github.com/ValentinBold" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.tiktok.com/@valentinbold_" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.youtube.com/@ValentinBold" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://in.pinterest.com/boldvalentin_/" target="_blank" rel="noopener">Pinterest</a>
+        <a href="https://www.behance.net/valentinovidiu" target="_blank" rel="noopener">Behance</a>
+        <a href="https://www.imdb.com/name/nm17674980/?ref_=ext_shr_lnk" target="_blank" rel="noopener">IMDb</a>
+        <a href="https://www.linkedin.com/in/valentin-bold-b8167a2a8/?originalSubdomain=ro" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.facebook.com/profile.php?id=61582197007578" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://bento.me/valentinbold" target="_blank" rel="noopener">Bento</a>
+        <a href="https://x.com/BoldValent63072" target="_blank" rel="noopener">X / Twitter</a>
+        <a href="https://www.instagram.com/boldvalentin_/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>© 2026 Valentin Bold</p>
